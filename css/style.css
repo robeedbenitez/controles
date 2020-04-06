@@ -4,9 +4,10 @@
   font-family: Roboto, Arial;
 
 }
+/*Imagen hero*/
 .hero-imagen{
   height: 75vh;
-  background: url(../assets/2.jpg);
+  background: url(../assets/2.jpg), black;
   background-size: cover;
   background-position: center;
   padding: 2em;
@@ -23,8 +24,11 @@
 }
 .hero-iamgen p{
   font-size: 24px;
-  text-shadow: 0px 0px 2px #000;
+  text-shadow: 0px 0px 2px rgb();
+
 }
+
+/*Cartas con sombra*/
 .c{
   background-color: #c6b69182;
 }
@@ -95,4 +99,39 @@
   transform: rotate(3.5deg);
   box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.6);
   z-index: -1;
+}
+/*listas personalizadas footer*/
+.pp{
+  height: 200px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ppc{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 95%;
+  height: 80%;
+}
+.ppe1{
+  margin: 5%;
+  width: 50%;
+  background-color: #aef;
+}
+.custom-list li{
+  list-style-type: none;
+  position: relative;
+  margin: 0.3em;
+}
+.custom-list li::before{
+  content: "";
+  position: absolute;
+  width: 0.4em;
+  height:0.4em;
+  border-radius: 30%;
+  background-color: black;
+  left: -0.6em;
+  top:0.3em;
 }

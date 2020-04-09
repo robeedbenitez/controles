@@ -1,0 +1,18 @@
+.slider{
+	width: 600px;
+	position: relative;
+	/* overflow: hidden; */
+}
+.slider .sliderc{
+	white-space: nowrap;
+}
+.slider .sliderc *{
+	white-space: normal;
+}
+.slider img{
+	width: 100%;
+	display: inline-block;
+}
+.si{
+
+}

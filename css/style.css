@@ -27,7 +27,35 @@
   text-shadow: 0px 0px 2px rgb();
 
 }
-
+/* nav */
+.cc{
+	justify-content: space-between;
+	margin: 0 auto;
+	display: flex;
+	width: 90%;
+}
+.logo{
+	align-items: center;
+	display: flex;
+	width: 110px;
+}
+.imagen{
+	width: 100%;
+}
+.cm{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 320px;
+}
+.cme{
+	list-style: none;
+}
+.cmtexto{
+	font-family: 'Oswald', sans-serif;
+	color: #ffaa50;
+	text-decoration:none;
+}
 /*Cartas con sombra*/
 .c{
   background-color: #c6b69182;

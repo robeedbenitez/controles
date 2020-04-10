@@ -158,14 +158,14 @@
 }
 .slider .sliderco li{
 	list-style: none;
-	background-color: #444;
-	width: 20px;
-	height: 20px;
+	background-color: #000;
+	width: 15px;
+	height: 15px;
 	border-radius: 50%;
 	margin-right: 5px;
 	display: inline-block;
 	cursor: pointer;
-	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 10);
 }
 .slider .sliderco li.active{
 	background-color: white;

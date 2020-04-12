@@ -49,7 +49,6 @@ class Slider {
     this.restart();
   }
   move(){
-
     this.contador++;
     if(this.contador>this.itemsCount-1) this.contador=0;
     this.moveTo(this.contador)
@@ -65,6 +64,34 @@ class Slider {
     this.slider.querySelector(".sliderc").style.left="-"+left+"%";
   }
 }
+class FixedNav {
+  constructor(fijar=true) {
+    this.fijas=fijar;
+    let pinged=false;
+    let nav=document.querySelector(".cc");
+    let coords=nav.getBoundingClientRect();
+    let stickyScrollPoint = coords.top;
+    window.addEventListener('scroll',function(ev){
+      let coords=nav.getBoundingClientRect();
+      if(window.scrollY<stickyScrollPoint)return defaulnav();
+      if(coords.top <=0) pingToTop();
+
+    })
+    function pingToTop(){
+     if (pinged) return
+     nav.classList.add("ccpin");
+     pinged=true;
+    }
+    function defaulnav(){
+      if (!pinged) return
+      nav.classList.remove("ccpin");
+      pinged=false;
+    }
+  }
+
+}
 (function(){
   new Slider(".slider");
+  new FixedNav();
+
 })();

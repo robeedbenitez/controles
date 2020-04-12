@@ -6,7 +6,7 @@
 }
 /*Imagen hero*/
 .hero-imagen{
-  height: 65vh;
+  height: 50vh;
   background: url(../assets/2.jpg), black;
   background-size: cover;
   background-position: center;
@@ -33,7 +33,16 @@
 	margin: 0 auto;
 	display: flex;
 	width: 100%;
+	height: 79px;
 	z-index: 1;
+	transition: 0.2s;
+}
+.espacio{
+	width: 100%;
+	height: 79px;
+	background-color: #e2dac7;
+}
+.spacioActivo{
 
 }
 .ccpin{
@@ -69,6 +78,18 @@
 	font-family: 'Oswald', sans-serif;
 	color: #ffaa50;
 	text-decoration:none;
+}
+/* redes ociales */
+.redessociales{
+	position: fixed;
+	width: 	50px;
+	height: 50px;
+	right: 5px;
+	bottom: 8px;
+	z-index: 1;
+	background-color: white;
+	border-radius: 50%;
+
 }
 
 /*Cartas con sombra*/

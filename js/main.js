@@ -90,8 +90,38 @@ class FixedNav {
   }
 
 }
+class ViewPort {
+  static visible(el){
+     let coords=el.getBoundingClientRect();
+     let windowHeigth =document.documentElement.clientHeight;
+     console.log(coords);
+     console.log(coords.top < windowHeigth && (coords.top*-1)<windowHeigth);
+     return (coords.top < windowHeigth && (coords.top*-1)<windowHeigth);
+  }
+}
+class PlayOnViewPort {
+  constructor(video_selector) {
+    this.video=document.querySelector(video_selector);
+    this.evaluate=this.evaluate.bind(this);
+    this.blindEvent();
+  }
+  blindEvent(){
+    window.addEventListener('scroll',this.evaluate)
+  }
+  evaluate(){
+    if(ViewPort.visible(this.video)){
+      this.video.play();
+      this.video.volumen(50);
+    }
+    else {
+      this.video.pause();
+    }
+  }
+
+
+}
 (function(){
   new Slider(".slider");
   new FixedNav();
-
+  new PlayOnViewPort("video")
 })();

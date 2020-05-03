@@ -111,7 +111,6 @@ class PlayOnViewPort {
   evaluate(){
     if(ViewPort.visible(this.video)){
       this.video.play();
-      this.video.volumen(50);
     }
     else {
       this.video.pause();

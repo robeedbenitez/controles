@@ -178,12 +178,13 @@
 }
 /* autoplay video */
 .cv video{
-	width: 800px;
+	width: 100%;
 	margin: 200px;
 }
 .cv{
 display: flex;
 justify-content: center;
+
 }
 /*listas personalizadas footer*/
 .pp{
